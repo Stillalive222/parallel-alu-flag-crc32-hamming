@@ -3,3 +3,6 @@ Parallel ALU Bank with Full-Width Arithmetic/Logic Execution, Flag Computation, 
 <p align="center">
   <img src="pic1.png" width="500">
 </p>
+<p align="center">
+  <img src="schematicfull.png" width="500">
+</p>
