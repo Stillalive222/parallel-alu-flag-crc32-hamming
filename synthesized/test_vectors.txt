@@ -1,0 +1,41 @@
+// Test vectors for Verilog testbench
+// Format: Input_Data, Expected_CRC32, Expected_Hamming
+
+Test 1:
+  Input:    0x00000000
+  CRC32:    0x2144DF1C
+  Binary:   00000000 00000000 00000000 00000000 
+
+Test 2:
+  Input:    0xFFFFFFFF
+  CRC32:    0xFFFFFFFF
+  Binary:   11111111 11111111 11111111 11111111 
+
+Test 3:
+  Input:    0x12345678
+  CRC32:    0xAF6D87D2
+  Binary:   00010010 00110100 01010110 01111000 
+
+Test 4:
+  Input:    0xDEADBEEF
+  CRC32:    0x1A5A601F
+  Binary:   11011110 10101101 10111110 11101111 
+
+Test 5:
+  Input:    0xAAAAAAAA
+  CRC32:    0xB596E05E
+  Binary:   10101010 10101010 10101010 10101010 
+
+Test 6:
+  Input:    0x55555555
+  CRC32:    0x6B2DC0BD
+  Binary:   01010101 01010101 01010101 01010101 
+
+
+// Verilog testbench task calls:
+calculate_crc(32'h00000000, 32'h2144DF1C);
+calculate_crc(32'hFFFFFFFF, 32'hFFFFFFFF);
+calculate_crc(32'h12345678, 32'hAF6D87D2);
+calculate_crc(32'hDEADBEEF, 32'h1A5A601F);
+calculate_crc(32'hAAAAAAAA, 32'hB596E05E);
+calculate_crc(32'h55555555, 32'h6B2DC0BD);

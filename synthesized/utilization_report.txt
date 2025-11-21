@@ -1,0 +1,30 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Thu Nov 20 00:58:07 2025
+| Host         : Anmol running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -file {C:/Users/kanmo/Desktop/co project/utilization_report.txt}
+| Design       : parallel_alu_bank
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-----------------------+----------------+------------+------------+---------+------+-----+--------+--------+------------+
+|        Instance       |     Module     | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | DSP Blocks |
++-----------------------+----------------+------------+------------+---------+------+-----+--------+--------+------------+
+| parallel_alu_bank     |          (top) |       1063 |       1063 |       0 |    0 | 115 |      0 |      0 |          4 |
+|   (parallel_alu_bank) |          (top) |          4 |          4 |       0 |    0 | 115 |      0 |      0 |          0 |
+|   alu0_inst           | alu_arithmetic |       1059 |       1059 |       0 |    0 |   0 |      0 |      0 |          4 |
++-----------------------+----------------+------------+------------+---------+------+-----+--------+--------+------------+
+
+
